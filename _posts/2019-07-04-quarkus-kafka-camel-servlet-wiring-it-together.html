@@ -80,7 +80,7 @@ quarkus.camel.defer-init-phase = true
     For some when I tried to change the property quarkus.camel.routes-uris during native run time, it's new value doesn't
     seem to be taken into account. So this file path is kind of like being hard coded right now.. 
 </p>
-<p><strong>Edit July 6,2019 : I discovered that there are different <a
+<p><strong>I discovered that there are different <a
             href="https://quarkus.io/guides/extension-authors-guide" target="_blank">Configuration Phases</a> 
             : BUILD_TIME, BUILD_AND_RUN_TIME_FIXED & RUN_TIME. 
         It turns out this property is set to BUILD_AND_RUN_TIME_FIXED, so it is not dynamically read during native run time for the moment.
