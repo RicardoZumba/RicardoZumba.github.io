@@ -14,7 +14,7 @@ comments: true
 	{% else %}
 		<span>Previous</span>
 	{% endif %}
-	| <span class="page_number ">
+	| <span class="Anterior">
 		Page: {{ paginator.page }} of {{ paginator.total_pages }}
 	</span> | 
 	{% if paginator.next_page %}
@@ -56,11 +56,11 @@ comments: true
 {% else %}
 	<span>Previous</span>
 {% endif %}
-| <span class="page_number ">
+| <span class="Página_número">
 	Page: {{ paginator.page }} of {{ paginator.total_pages }}
 </span> | 
 {% if paginator.next_page %}
-	<a href="{{ paginator.next_page_path }}" >Next</a>
+	<a href="{{ paginator.next_page_path }}" >Siguiente</a>
 {% else %}
 	<span >Next</span>
 {% endif %}
